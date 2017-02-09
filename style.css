@@ -1,4 +1,4 @@
-<!-- CSS layout file-->
+/*CSS layout file*/
 body {
   background-color: purple;
 }
@@ -8,5 +8,5 @@ h1 {
 p {
   color: blue;
   border: 1px solid powderblue;
-   margin: 50px;
+  margin: 50px;
 }
