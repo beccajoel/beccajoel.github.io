@@ -8,33 +8,63 @@
   <link rel="stylesheet" href="skeleton.css">
   <script src="tabscript.js"></script>
   <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
 </ul>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
 </head>
   
 <body>
-  <div class="container">
-  <h1> Rebecca Karol </h1> 
+  <div id="Home" class="tabcontent">
+  <h3>Home</h3>
+    <div class="container">
+   <h1> Rebecca Karol </h1> 
   <p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
-  <!-- .container is main centered wrapper -->
+    </div>
+   </div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>I am a sophomore at the University of Southern California pursuing a degree in computer science.</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact Me!</h3>
+  <p>I would love to hear from you!</p>
+  <form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Just For Fun</option>
+        <option value="Option 3">Miscellaneous</option>
+      </select>
+    </div>
   </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+</form>
+</div>
+  
+  <div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
+  <p>I have included some of the cool projects I've been working on over the past few years! 
+    Please take a look and let me know what you think!</p> 
+</div>
+  
+ 
+  <!-- .container is main centered wrapper -->
   <!-- columns should be the immediate child of a .row -->
   <!--div class="row">
     <!div class="one column">Hi<!/div>
@@ -110,31 +140,7 @@
   <li>Item 3</li>
 </ul-->
   </body>
-<footer>
-<form>
-  <div class="row">
-    <div class="six columns">
-      <label for="exampleEmailInput">Your email</label>
-      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-    </div>
-    <div class="six columns">
-      <label for="exampleRecipientInput">Reason for contacting</label>
-      <select class="u-full-width" id="exampleRecipientInput">
-        <option value="Option 1">Questions</option>
-        <option value="Option 2">Just For Fun</option>
-        <option value="Option 3">Miscellaneous</option>
-      </select>
-    </div>
-  </div>
-  <label for="exampleMessage">Message</label>
-  <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-  <label class="example-send-yourself-copy">
-    <input type="checkbox">
-    <span class="label-body">Send a copy to yourself</span>
-  </label>
-  <input class="button-primary" type="submit" value="Submit">
-</form>
-  </footer>
+
 
 <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
