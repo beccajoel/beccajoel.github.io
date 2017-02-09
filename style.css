@@ -8,6 +8,9 @@ h1 {
 p {
   color: orchid;
 }
+p1 {
+  color: blue;
+}
 /* Style the list */
 ul.tab {
     list-style-type: none;
