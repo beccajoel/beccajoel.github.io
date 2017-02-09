@@ -47,16 +47,16 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:hover {background-color: #ff10ff;}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #ccc;}
+ul.tab li a:focus, .active {background-color: #c31fff;}
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #c31fff;
     border-top: none;
 }
 
