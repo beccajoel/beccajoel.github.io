@@ -14,7 +14,7 @@ ul.tab {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid  #ff10ff;
     background-color: orchid;
 }
 
@@ -50,13 +50,13 @@ ul.tab li a {
 ul.tab li a:hover {background-color: #ff10ff;}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #c31fff;}
+ul.tab li a:focus, .active {background-color: #ff10ff;}
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #c31fff;
+    border: 1px solid  #ff10ff;
     border-top: none;
 }
 
