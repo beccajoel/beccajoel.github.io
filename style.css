@@ -11,13 +11,19 @@ p {
 p1 {
   color: blue;
 }
+p2{
+ color: darkviolet; 
+}
+
+p3{
+ color: deeppink;
+}
 /* Style the list */
 ul.tab {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid  #ff10ff;
     background-color: orchid;
 }
 
