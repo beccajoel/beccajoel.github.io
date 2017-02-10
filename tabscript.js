@@ -5,9 +5,8 @@ function openCity(evt, cityName) {
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-            if( i==0) tabcontent.style.display= "Home";   
-        else tabcontent[i].style.display = "none";
+    for (i = 0; i < tabcontent.length; i++) {   
+       tabcontent[i].style.display = "none";
     }
 
 
