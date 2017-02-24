@@ -27,6 +27,11 @@ ul.tab {
     background-color: orchid;
 }
 
+#carousel {
+	max-width: 560px;
+	/*min-height: 244px;*/
+}
+
 /* Float the list items side by side */
 ul.tab li {float: left;}
 
