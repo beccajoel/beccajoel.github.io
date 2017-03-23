@@ -149,22 +149,19 @@
               $(this).find('.caption').slideUp(250);
             }
           );
-            $("#content img").toggle("scale",{
-              percent: "80%"
-            },0);
-        $('code-web.jpeg').hover(
-          function() {
-            $(this).css("cursor", "pointer");
-            $(this).toggle("scale",{
-              percent: "90%"
-            },500);
+            $('code-web.jpeg').hover(function() {
+        $(this).css("cursor", "pointer");
+        $(this).toggle({
+          effect: "scale",
+          percent: "90%"
+        },200);
+    }, function() {
+         $(this).toggle({
+           effect: "scale",
+           percent: "80%"
+         },200);
 
-        }, function() {
-            $(this).toggle("scale",{
-              percent: "80%"
-            },500);
-
-        });
+    });
       });
       </script>
 
