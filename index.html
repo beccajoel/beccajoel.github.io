@@ -62,6 +62,7 @@
 		  }
 		  </style>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
   
 <body>
@@ -160,6 +161,30 @@
         $( this ).slideUp();
       });
       </script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.fade').hover(
+            function(){
+              $(this).find('.caption').fadeIn(250);
+            },
+            function(){
+              $(this).find('.caption').fadeOut(250);
+            }
+          );
+        });
+      </script>
+
+      <div class="grid-block-container">
+     <div class="grid-block fade">
+      <div class="caption">
+            <h3>Caption Title</h3>
+            <p>hi this is a test of fading grids</p>
+        </div>
+      <img src="keyboard-web.jpeg" />
+      <h4>Fade</h4>
+    </div>
+    </div>
 
   </div>
 
