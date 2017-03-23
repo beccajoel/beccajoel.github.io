@@ -149,7 +149,23 @@
               $(this).find('.caption').slideUp(250);
             }
           );
+            $("#content img").toggle("scale",{
+              percent: "80%"
+            },0);
+        $('#content img').hover(
+          function() {
+            $(this).css("cursor", "pointer");
+            $(this).toggle("scale",{
+              percent: "90%"
+            },500);
+
+        }, function() {
+            $(this).toggle("scale",{
+              percent: "80%"
+            },500);
+
         });
+      });
       </script>
 
       <div class="grid-block-container">
