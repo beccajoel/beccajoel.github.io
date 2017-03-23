@@ -47,22 +47,35 @@
 			  </a>
 	  		</div>
 	</div-->
-	<script type= "text/javascript" src= "https://ajax.microsoft.com/ajax/jQuery/jquery-11.4.2.min.js">
-		</script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$("a").click(function(event){
-				alert("You Clicked me!");
-			});
-		});
-		</script>
+	 <meta charset="utf-8">
+		  <title>click demo</title>
+			<style>
+		  p {
+		    color: red;
+		    margin: 5px;
+		    cursor: pointer;
+		  }
+		  p:hover {
+		    background: yellow;
+		  }
+		  </style>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
   
 <body>
   <div id="Home" class="tabcontent">
   <center><p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
     </center>
-	  <a href="#">Click Me</a>
+	  <p>First Paragraph</p>
+	<p>Second Paragraph</p>
+	<p>Yet one more Paragraph</p>
+	 
+	<script>
+	$( "p" ).click(function() {
+	  $( this ).slideUp();
+	});
+	</script>
+ 
   </div>
 
 
