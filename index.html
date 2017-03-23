@@ -12,7 +12,7 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onClick="openCity(event, 'Jquery')">JQuery</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onClick="openCity(event, 'JQuery')">JQuery</a></li>
   </ul>
 
   <center><h1> Rebecca Karol </h1> </center>
@@ -51,12 +51,12 @@
 	 <meta charset="utf-8">
 		  <title>click demo</title>
 			<style>
-		  p {
+		  a {
 		    color: red;
 		    margin: 5px;
 		    cursor: pointer;
 		  }
-		  p:hover {
+		  a:hover {
 		    background: yellow;
 		  }
 		  </style>
@@ -67,18 +67,6 @@
   <div id="Home" class="tabcontent">
   <center><p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
     </center>
-	  <p>First Paragraph</p>
-	<p>Second Paragraph</p>
-	<p>Yet one more Paragraph</p>
-  <p>THIS IS A GIT TEST #PLS WORKKK</p>
-	  <p> Yet another test</p>
-	 
-	<script>
-	$( "p" ).click(function() {
-	  $( this ).slideUp();
-	});
-	</script>
- 
   </div>
 
 
@@ -160,6 +148,17 @@
 
 <div id="JQuery" class="tabcontent">
 <p>Testing Jqueryfunctionality </p>
+ <a>First Paragraph</a>
+  <a>Second Paragraph</a>
+  <a>Yet one more Paragraph</a>
+  <a>THIS IS A GIT TEST #PLS WORKKK</a>
+    <a> Yet another test</a>
+   
+  <script>
+  $( "p" ).click(function() {
+    $( this ).slideUp();
+  });
+  </script>
 
 </div>
   
