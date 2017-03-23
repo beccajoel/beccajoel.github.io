@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="skeleton.css">
   <link rel="jquery" href="jquery.html">
   <script src="tabscript.js"></script>
+  <style type="text/css"> 
+    .growImage {position:relative;width:80%;left:15px;top:15px}
+    .growDiv { left: 100px; top: 100px;width:150px;height:150px;position:relative }
+</style>
+
   <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
@@ -149,19 +154,11 @@
               $(this).find('.caption').slideUp(250);
             }
           );
-        $('.enlarge').hover(function() {
-        $(this).find('.expand');
-        $(this).toggle({
-          effect: "scale",
-          percent: "90%"
-        },200);
-    }, function() {
-         $(this).toggle({
-           effect: "scale",
-           percent: "80%"
-         },200);
-
-    });
+        $('.growImage').mouseOver(function() {
+        $(this).stop().animate({"width": "100%", "left": "0px", "top": "0px"}, 400, 'swing');
+      }).mouseout(function(){
+        $(this).stop().animate({"width": "80%", "left": "15px", "top": "15px"}, 200, 'swing');
+      });;
       });
       </script>
 
@@ -181,8 +178,11 @@
           </div>
         <img src="aerial-web.jpeg" height="400" width="300" />
       </div>
-       <div class="expand">
-      <img src="code-web.jpeg" height = "300" width ="300" />
+
+
+
+       <div class="growDiv">
+      <img class="growImage" src="code-web.jpeg" height = "300" width ="300" />
     </div>
     </div>
    
