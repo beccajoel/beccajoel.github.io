@@ -149,8 +149,8 @@
               $(this).find('.caption').slideUp(250);
             }
           );
-            $('code-web.jpeg').hover(function() {
-        $(this).css("cursor", "pointer");
+        $('.enlarge').hover(function() {
+        $(this).find('.expand');
         $(this).toggle({
           effect: "scale",
           percent: "90%"
@@ -181,6 +181,9 @@
           </div>
         <img src="aerial-web.jpeg" height="400" width="300" />
       </div>
+    </div>
+    <div class="expand">
+      <img src="code-web.jpeg" height = "300" width ="300" />
     </div>
 
 
