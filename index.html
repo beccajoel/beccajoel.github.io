@@ -172,18 +172,35 @@
               $(this).find('.caption').fadeOut(250);
             }
           );
+          $('.slide').hover(
+            function(){
+              $(this).find('.caption').slideDown(250);
+            },
+            function(){
+              $(this).find('.caption').slideUp(250);
+            }
+          );
         });
       </script>
 
       <div class="grid-block-container">
-      <div class="grid-block fade">
+        <div class="grid-block fade">
+          <div class="caption">
+              <h3>Pretty Keyboard</h3>
+              <p>hi this is a test of fading grids</p>
+          </div>
+        <img src="keyboard-web.jpeg" height="300" width="300" />
+      </div>
+
+      <div class="grid-block slide">
         <div class="caption">
-            <h3>Pretty Keyboard</h3>
-            <p>hi this is a test of fading grids</p>
-        </div>
-      <img src="keyboard-web.jpeg" height="300" width="300" />
+              <h3>Slidey</h3>
+              <p>Yay More tests of functionality</p>
+          </div>
+        <img src="aerial-web.jpeg" height="300" width="300" />
+      </div>
     </div>
-    </div>
+
 
   </div>
 
