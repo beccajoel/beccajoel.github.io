@@ -1,9 +1,30 @@
 *.o
-<!div class="grid-block-container">
-  <!div class="grid-block fade">
-    <!div class="caption">
-        <!h3>Pretty Keyboard<!/h3>
-        <!p>hi this is a test of fading grids<!/p>
-    <!/div>
-  <!img src="keyboard-web.jpeg" height="400" width="300" />
-<!/div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.fade').hover(
+            function(){
+              $(this).find('.caption').fadeIn(400);
+            },
+            function(){
+              $(this).find('.caption').fadeOut(400);
+            }
+          );
+          $('.slide').hover(
+            function(){
+              $(this).find('.caption').slideDown(250);
+            },
+            function(){
+              $(this).find('.caption').slideUp(250);
+            }
+          );
+      });
+      </script>
+<div class="grid-block-container">
+  <div class="grid-block fade">
+    <div class="caption">
+        <h3>Pretty Keyboard</h3>
+        <p>hi this is a test of fading grids</p>
+    </div>
+  <img src="keyboard-web.jpeg" height="400" width="300" />
+</div>
