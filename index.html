@@ -46,11 +46,12 @@
   <center><p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
     </center>
     <section>
-      <img class="mySlides" src="keyboard-web.jpeg" style= "width:100%">
       <img class="mySlides" src="Zion2-36.jpg" style= "width:100%">
       <img class="mySlides" src="Zion3-9.jpg" style= "width:100%">
       <img class="mySlides" src="code-web.jpeg" style= "width:100%">
     </section>
+
+    //slideshow displaying new picture every 4 seconds functionality
     <script>
     var myIndex =0;
     carousel();
@@ -66,7 +67,7 @@
         myIndex=1;
       }
       x[myIndex-1].style.display="block";
-      setTimeout(carousel, 3000);
+      setTimeout(carousel, 4000);
     }
     </script>
   </div>
