@@ -24,30 +24,6 @@
   </ul>
 
   <center><h1><b> Rebecca Karol </b></h1> </center>
-  <section>
-    <img class="mySlides" src="keyboard-web.jpeg" style= "width:100%">
-    <img class="mySlides" src="Zion2-36.jpg" style= "width:100%">
-    <img class="mySlides" src="Zion3-9.jpg" style= "width:100%">
-    <img class="mySlides" src="code-web.jpeg" style= "width:100%">
-  </section>
-  <script>
-  var myIndex =0;
-  carousel();
-
-  function carousel(){
-    var i;
-    var x= document.getElementsByClassName("mySlides");
-    for(i =0; i<x.length; i++){
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if(myIndex>x.length){
-      myIndex=1;
-    }
-    x[myIndex-1].style.display="block";
-    setTimeout(carousel, 3000);
-  }
-  </script>
 
 	 <meta charset="utf-8">
 		  <title>click demo</title>
@@ -69,6 +45,30 @@
   <div id="Home" class="tabcontent">
   <center><p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
     </center>
+    <section>
+      <img class="mySlides" src="keyboard-web.jpeg" style= "width:100%">
+      <img class="mySlides" src="Zion2-36.jpg" style= "width:100%">
+      <img class="mySlides" src="Zion3-9.jpg" style= "width:100%">
+      <img class="mySlides" src="code-web.jpeg" style= "width:100%">
+    </section>
+    <script>
+    var myIndex =0;
+    carousel();
+
+    function carousel(){
+      var i;
+      var x= document.getElementsByClassName("mySlides");
+      for(i =0; i<x.length; i++){
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if(myIndex>x.length){
+        myIndex=1;
+      }
+      x[myIndex-1].style.display="block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
   </div>
 
 
