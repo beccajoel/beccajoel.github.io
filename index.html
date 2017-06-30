@@ -23,7 +23,6 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Blog')">Blog</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'DIY')">DIY</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photography')">Photography</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onClick="openCity(event, 'JQuery')">JQuery</a></li>
   </ul>
   <!makes the website work on all devices and screen resolutions>
 <meta name="viewport" content="width+device-width, initial-scale+1">
@@ -219,44 +218,6 @@ crafting and creating new fun things to wear and share and have been my whole li
   and crafting anything in general. I love putting my unique spin everyday accessories
   as well as personalizing
 </p>
-<section>
-<h2>Hair Accessories</h2>
-<p><center><h3>Fancy Hair Ties</h3></center>
-  <center><img src="IMG_9012.JPG" style="width:50%">
-    <img src="IMG_9015.JPG" style="width:50%"></center>
-</p>
-<p><h3><center>Luau Hair Clip</center></h3>
-  <center><img src="IMG_9013.JPG" style="width:50%"></center>
-  <center><img src="IMG_9014.JPG" style="width:50%"></center>
-</p>
-</section>
-<section>
-  <h2>Jewlery</h2>
-</section>
-</div>
-
-<div id="Photography" class="tabcontent">
-  <h2>Photography</h2>
-  <p>Below I have featured some phenomenal photography of some of the
-    most talented photographers I know! Definitely check out their other work if
-    you are a fan of what I've featured. Personally, I have been focused on capturing
-    moments of some of my favorite adventures. I hope you enjoy! </p>
-
-</div>
-
-    <div id="JQuery" class="tabcontent">
-      <p>Testing Jquery functionality </p>
-      <k>test1</k>
-      <k>test2</k>
-      <k>test3</k>
-      <k>test4</k>
-      <k>test5</k>
-
-      <script>
-      $( "k" ).click(function() {
-        $( this ).slideUp();
-      });
-      </script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
       <script type="text/javascript">
         $(document).ready(function() {
@@ -276,14 +237,8 @@ crafting and creating new fun things to wear and share and have been my whole li
               $(this).find('.caption').slideUp(250);
             }
           );
-        $('.growImage').mouseOver(function() {
-        $(this).stop().animate({"width": "100%", "left": "0px", "top": "0px"}, 400, 'swing');
-      }).mouseout(function(){
-        $(this).stop().animate({"width": "80%", "left": "15px", "top": "15px"}, 200, 'swing');
-      });;
       });
       </script>
-
       <div class="grid-block-container">
         <div class="grid-block fade">
           <div class="caption">
@@ -293,25 +248,39 @@ crafting and creating new fun things to wear and share and have been my whole li
         <img src="keyboard-web.jpeg" height="400" width="300" />
       </div>
 
-      <div class="grid-block slide">
-        <div class="caption">
-              <h3>Slidey</h3>
-              <p>Yay More tests of functionality</p>
-          </div>
-        <img src="aerial-web.jpeg" height="400" width="300" />
+<section>
+<h2>Hair Accessories</h2>
+<p><center><h3>Fancy Hair Ties</h3></center>
+  <div class="grid-block slide">
+    <div class="caption">
+          <h3>Slidey</h3>
+          <p>Yay More tests of functionality</p>
       </div>
+    <img src="aerial-web.jpeg" height="400" width="300" />
+  <center><img src="IMG_9012.JPG" style="width:50%">
+    <img src="IMG_9015.JPG" style="width:50%"></center>
+      </div>
+</p>
+<p><h3><center>Luau Hair Clip</center></h3>
+  <center><img src="IMG_9013.JPG" style="width:50%"></center>
+  <center><img src="IMG_9014.JPG" style="width:50%"></center>
+</p>
+</section>
+<section>
+  <h2>Jewlery</h2>
+</section>
+</div>
 
+<div id="Photography" class="tabcontent">
+  <h2>Photography</h2>
+  <p>Below I have featured some phenomenal photography of some of the
+    most talented photographers I know! Definitely check out their other work if
+    you are a fan of what I've featured. Personally, I have been focused on capturing
+    moments of some of my favorite adventures. I hope you enjoy! </p>
 
-
-       <div class="growDiv">
-      <img class="growImage" src="code-web.jpeg" height = "300" width ="300" />
-    </div>
-    </div>
-
-
-
-  </div>
-  <footer class="w3-container w3-padding-48 w3-center w3-black w3-xlarge">
+</div>
+</div>
+  <footer class="w3-container w3-padding-36 w3-center w3-black w3-xlarge">
     <a href="#"><i class="fa fa-facebook-official"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
   </footer>
