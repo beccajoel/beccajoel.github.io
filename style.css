@@ -26,7 +26,7 @@ ul.tab {
     background-color: orchid;
 }
 /* Float the list items side by side */
-ul.tab li {float: center;}
+ul.tab li {float: left;}
 
 /* Style the links inside the list items */
 ul.tab li a {
