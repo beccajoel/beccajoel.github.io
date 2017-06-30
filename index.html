@@ -20,6 +20,7 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Resume')">Resume</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Blog')">Blog</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'DIY')">DIY Shop</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onClick="openCity(event, 'JQuery')">JQuery</a></li>
   </ul>
 
@@ -44,31 +45,6 @@
     <center><h1><b> Rebecca Karol </b></h1> </center>
   <center><p>Welcome to my brand new website! Please stay tuned for more updates to come as this is still a work in progress! </p>
     </center>
-    <section>
-      <img class="mySlides" src="Zion2-36.jpg" style= "width:100%">
-      <img class="mySlides" src="Zion3-9.jpg" style= "width:100%">
-      <img class="mySlides" src="code-web.jpeg" style= "width:100%">
-    </section>
-
-    #slideshow displaying new picture every 4 seconds functionality
-    <script>
-    var myIndex =0;
-    carousel();
-
-    function carousel(){
-      var i;
-      var x= document.getElementsByClassName("mySlides");
-      for(i =0; i<x.length; i++){
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if(myIndex>x.length){
-        myIndex=1;
-      }
-      x[myIndex-1].style.display="block";
-      setTimeout(carousel, 4000);
-    }
-    </script>
   </div>
 
 
@@ -170,6 +146,36 @@
 <div id="Blog" class="tabcontent">
   <center><h1><b> Rebecca Karol </b></h1> </center>
   <p>I will be connecting you to my adventure blog here! </p>
+  <section>
+    <img class="mySlides" src="Zion2-36.jpg" style= "width:100%">
+    <img class="mySlides" src="Zion3-9.jpg" style= "width:100%">
+    <img class="mySlides" src="code-web.jpeg" style= "width:100%">
+  </section>
+
+  #slideshow displaying new picture every 4 seconds functionality
+  <script>
+  var myIndex =0;
+  carousel();
+
+  function carousel(){
+    var i;
+    var x= document.getElementsByClassName("mySlides");
+    for(i =0; i<x.length; i++){
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if(myIndex>x.length){
+      myIndex=1;
+    }
+    x[myIndex-1].style.display="block";
+    setTimeout(carousel, 4000);
+  }
+  </script>
+</div>
+
+<div id="DIY" class="tabcontent">
+  <p>Welcome to my DIY Shop! On this page I will display pictures and descriptions
+  of some of my featured and most recent DIY creations.</p>
 </div>
 
     <div id="JQuery" class="tabcontent">
