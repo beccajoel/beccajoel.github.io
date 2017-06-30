@@ -94,7 +94,7 @@ ul.tab li a:focus, .active {background-color: #ff10ff;}
     position: absolute;
     top: 0;
     left: 0;
-    background: url(imgs/trans-black-50.png);
+    background: url(trans-black-50.png);
     width: 100%;
     height: 100%;
 }
