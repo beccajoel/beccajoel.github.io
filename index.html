@@ -171,28 +171,27 @@
       dispersion better and then encompassed it in a knit white scarf. Fluffy white scarf by day, Electric color coordinated
       accessory by night.</p2>
       <section>
-      <img class="scarf" src="imgs/IMG_2071.jpg" style="width:50%">
       <img class="scarf" src="imgs/IMG_2226.jpg" style="width:50%">
       <img class="scarf" src="imgs/IMG_2249.jpg" style="width:50%">
       <img class="scarf" src="imgs/IMG_2228.jpg" style="width:50%">
       <img class="scarf" src="imgs/IMG_2253.jpg" style="width:50%">
       <img class="scarf" src="imgs/IMG_2501.jpg" style="width:50%">
     </section><script>
-    var myIndex =0;
-    carousel();
+    var indy =0;
+    carousel1();
 
-    function carousel(){
-      var i;
-      var x= document.getElementsByClassName("scarf");
-      for(i =0; i<x.length; i++){
-        x[i].style.display = "none";
+    function carousel1(){
+      var j;
+      var k= document.getElementsByClassName("scarf");
+      for(j =0; j<k.length; j++){
+        k[j].style.display = "none";
       }
-      myIndex++;
-      if(myIndex>x.length){
-        myIndex=1;
+      indy++;
+      if(indy>k.length){
+        indy=1;
       }
-      x[myIndex-1].style.display="block";
-      setTimeout(carousel, 5000);
+      k[indy-1].style.display="block";
+      setTimeout(carousel1, 5000);
     }
     </script>
          <center><h2> Outdoorsica</h2></center>
