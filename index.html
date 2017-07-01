@@ -212,19 +212,19 @@
   <p><center><h3>The Summer of Roadtrips!</h3></center></p>
   <p><h3>Zion National Park</h3></p>
   <section>
-    <img class="mySlides" src="imgs/Zion2-36.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/Zion3-9.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/Zion2-51.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/Zion2-26.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_6065.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7674.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7715.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7743.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7819.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7843.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7861.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7883.jpg" style= "width:100%">
-    <img class="mySlides" src="imgs/IMG_7993.jpg" style= "width:100%">
+    <img class="zion" src="imgs/Zion2-36.jpg" style= "width:75%">
+    <img class="zion" src="imgs/Zion3-9.jpg" style= "width:75%">
+    <img class="zion" src="imgs/Zion2-51.jpg" style= "width:75%">
+    <img class="zion" src="imgs/Zion2-26.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_6065.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7674.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7715.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7743.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7819.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7843.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7861.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7883.jpg" style= "width:75%">
+    <img class="zion" src="imgs/IMG_7993.jpg" style= "width:75%">
   </section>
   <p><h4>The first adventure of the summer officially kicked off the morning after my last final of
   sophomore year! Two computer science majors, Two computer engineering and computer science majors,
@@ -232,13 +232,13 @@ and a mechanical engineer all set off in a five-person sudan with the destinatio
 Park in Utah. Thursday we spent most of our time jamming out to music, and </h4></p>
 <p><h3>Philadelphia</p></h3>
 <section>
-  <img class="mySlides" src="imgs/IMG_8284.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8303.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8309.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8343.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8344.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8358.jpg" style= "width:100%">
-  <img class="mySlides" src="imgs/IMG_8368.jpg" style= "width:100%">
+  <img class="philly" src="imgs/IMG_8284.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8303.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8309.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8343.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8344.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8358.jpg" style= "width:75%">
+  <img class="philly" src="imgs/IMG_8368.jpg" style= "width:75%">
 </section>
 <p><h4>Living on the Jersey Shore I'm conveinently located between two wonderful
 cities! My girlfriend and I decided to take a lil 2 hour roadtrip to Philadelphia
@@ -251,11 +251,12 @@ AKA Philly to visit one of our other girlfriends from high school.</h4></p>
   <!slideshow displaying new picture every 4 seconds functionality>
   <script>
   var myIndex =0;
-  carousel();
+  var i;
+  carousel2();
+  carousel3();
 
-  function carousel(){
-    var i;
-    var x= document.getElementsByClassName("mySlides");
+  function carousel2(){
+    var x= document.getElementsByClassName("zion");
     for(i =0; i<x.length; i++){
       x[i].style.display = "none";
     }
@@ -264,7 +265,20 @@ AKA Philly to visit one of our other girlfriends from high school.</h4></p>
       myIndex=1;
     }
     x[myIndex-1].style.display="block";
-    setTimeout(carousel, 5000);
+    setTimeout(carousel2, 5000);
+  }
+
+  function carousel3(){
+    var x= document.getElementsByClassName("philly");
+    for(i =0; i<x.length; i++){
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if(myIndex>x.length){
+      myIndex=1;
+    }
+    x[myIndex-1].style.display="block";
+    setTimeout(carousel3, 5000);
   }
   </script>
 </div>
