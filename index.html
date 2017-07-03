@@ -244,6 +244,13 @@ Park in Utah. Thursday we spent most of our time jamming out to music, and </h4>
 <p><h4>Living on the Jersey Shore I'm conveinently located between two wonderful
 cities! My girlfriend and I decided to take a lil 2 hour roadtrip to Philadelphia
 AKA Philly to visit one of our other girlfriends from high school.</h4></p>
+<p><h3>Boston</h3></p>
+<section><center>
+  <img class="boston" src="imgs/IMG_8284.jpg" style= "width:75%">
+  <img class="boston" src="imgs/IMG_8303.jpg" style= "width:75%">
+  <img class="boston" src="imgs/IMG_8309.jpg" style= "width:75%">
+  <img class="boston" src="imgs/IMG_8343.jpg" style= "width:75%">
+</center></section>
   <p><center><h2>Los Angeles Hiking Adventures</h2></center></p>
 
 
@@ -252,8 +259,10 @@ AKA Philly to visit one of our other girlfriends from high school.</h4></p>
   var myIndex =0;
   var i;
   var index=0;
+  var index1=0;
   carousel2();
   carousel3();
+  carousel4();
 
   function carousel2(){
     var x= document.getElementsByClassName("zion");
@@ -280,7 +289,21 @@ AKA Philly to visit one of our other girlfriends from high school.</h4></p>
     y[index-1].style.display="block";
     setTimeout(carousel3, 5000);
   }
+
+  function carousel4(){
+    var z= document.getElementsByClassName("boston");
+    for(i =0; i<z.length; i++){
+      z[i].style.display = "none";
+    }
+    index1++;
+    if(index1>z.length){
+      index1=1;
+    }
+    z[index1-1].style.display="block";
+    setTimeout(carousel4, 5000);
+  }
   </script>
+
 </div>
 
 <div id="DIY" class="tabcontent">
