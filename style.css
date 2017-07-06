@@ -18,7 +18,13 @@ p3{
  color: deeppink;
 }
 .jumbotron{
-    background-image: "imgs/9.jpg"
+    background-image: url("imgs/9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    margin-top: 45px;
 }
 /* Style the list */
 ul.tab {
