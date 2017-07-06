@@ -17,6 +17,9 @@ p2{
 p3{
  color: deeppink;
 }
+.jumbotron{
+    background-image: "imgs/9.jpg"
+}
 /* Style the list */
 ul.tab {
     list-style-type: none;
