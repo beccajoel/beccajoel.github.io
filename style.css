@@ -98,6 +98,14 @@ ul.tab li a:focus, .active {background-color: #ff10ff;}
     border: 1px solid #ddd;
 }
 
+.hair{
+    display: inline;
+}
+
+.hair1{
+    display: inline;
+}
+
 .caption {
     display: none;
     position: absolute;
