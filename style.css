@@ -128,8 +128,8 @@ ul.tab li a:focus, .active {background-color: #ff10ff;}
     margin: 0 20px 15px;
 }
 footer {
-  font-size: 12px;
-  padding: 20px 0;
+  font-size: 20px;
+  padding: 20px 0 #000;
   color:#fff;
 }
 
