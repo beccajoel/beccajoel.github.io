@@ -130,6 +130,7 @@ ul.tab li a:focus, .active {background-color: #ff10ff;}
 footer {
   font-size: 12px;
   padding: 20px 0;
+  color:#fff;
 }
 
 footer .col-sm-8 {
