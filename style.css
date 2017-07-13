@@ -25,12 +25,11 @@ p3{
     height: 350px;
     position: relative;
     margin-top: 45px;
-}
-.container{
     font-size: 48px;
     color:#fff;
     text-align: center;
 }
+
 /* Style the list */
 ul.tab {
     list-style-type: none;
