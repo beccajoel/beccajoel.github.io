@@ -8,6 +8,7 @@
 	  		<link rel="stylesheet" href="style.css">
 	  		<link rel="stylesheet" href="normalize.css">
 	  		<link rel="stylesheet" href="skeleton.css">
+	  		<link href="blog.html">
 	  		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	  		<link rel="jquery" href="jquery.html">
@@ -16,6 +17,7 @@
 		 		.growImage {position:relative;width:80%;left:15px;top:15px}
 		 		.growDiv { left: 100px; top: 100px;width:150px;height:150px;position:relative }
 	  		</style>
+	  		<!--
 	  		<ul class="tab">
 	  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
 	  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
@@ -26,6 +28,7 @@
 	  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'DIY')">DIY</a></li>
 	  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photography')">Photography</a></li>
 	  		</ul>
+	  		-->
 	  		<!--makes the website work on all devices and screen resolutions-->
 			<meta name="viewport" content="width=device-width, initial-scale1">
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -44,23 +47,37 @@
 			<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   		</head>
 		<body>
-		<!--
-		<header class="container">
-		  <div class="row">
-			 <nav class="col-sm-8 text-left">
-				<p>Home</p>
-				<p>About</p>
-				<p>Contact</p>
-				<p>Projects</p>
-				<p>Resume</p>
-				<p>Blog</p>
-				<p>DIY</p>
-			 </nav>
-		  </div>
-		</header>
-		-->
 
-
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+				<!--
+				  <div class="row">
+					 <nav class="col-sm-8 text-left">
+						<p>Home</p>
+						<p>About</p>
+						<p>Contact</p>
+						<p>Projects</p>
+						<p>Resume</p>
+						<p>Blog</p>
+						<p>DIY</p>
+					 </nav>
+				  </div>
+				  -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav">
+			  			<li class="active" id="home"><a href="#" data-value="Home">Home<span class="sr-only">(current)</span></a> </li>
+			  			<li id="about"><a href="#" data-value="About">About</a></li>
+			  			<li id="about"><a href="#" data-value="Contact">Contact</a></li>
+			  			<li id="about"><a href="#" data-value="Projects">Projects</a></li>
+			  			<li id="about"><a href="#" data-value="Resume">Resume</a></li>
+			  			<li id="about"><a href='blog.html'>Blog</a></li>
+			  			<li id="about"><a href="#" data-value="DIY">DIY</a></li>
+			  			<li id="about"><a href="#" data-value="Photography">Photography</a></li>
+			  			</ul>
+			  		</div>
+				</div>
+			</nav>
+		
 			<section class="jumbotron">
 				<div class="container">
 					<div class="row text-center">
